@@ -1,0 +1,10 @@
+<%- include('partials/header') %>
+
+<h1>Temas para refletir</h1>
+<ul>
+  <% temas.forEach(tema => { %>
+    <li><a href="/temas/<%= tema.nome %>"><%= tema.titulo %></a></li>
+  <% }) %>
+</ul>
+
+<%- include('partials/footer') %>

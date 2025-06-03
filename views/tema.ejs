@@ -1,0 +1,14 @@
+<%- include('partials/header') %>
+
+<h2><%= titulo %></h2>
+<p><%= descricao %></p>
+
+<h3>Sua reflexão</h3>
+<form action="/salvar" method="POST">
+  <textarea name="reflexao" rows="6" placeholder="Escreva sua reflexão aqui..." required></textarea>
+  <input type="hidden" name="tema" value="<%= titulo %>">
+  <br><br>
+  <button type="submit">Salvar Reflexão</button>
+</form>
+
+<%- include('partials/footer') %>
